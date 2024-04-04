@@ -1,0 +1,13 @@
+# Basic dependabot.yml file with
+# minimum configuration package managers
+
+version: 2
+updates:
+
+  # Configuration for pip
+  # ./pyproject.toml
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      
