@@ -1,0 +1,41 @@
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+robotframework = "7.0"
+robotframework-browser = "18.3.0"
+robotframework-jsonlibrary = "0.5"
+robotframework-pabot = "2.18.0"
+robotframework-pythonlibcore = "4.4.0"
+robotframework-requests = "0.9.6"
+timecode = "1.4.0"
+
+[tool.poetry.group.dev.dependencies]
+robotframework-robocop = "5.0.3"
+robotframework-tidy = "4.11.0"
+ruff = "0.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.robotidy]
+configure = [
+    "NormalizeNewLines:separate_templated_tests=True"
+]
+src = [
+    "VidiEditor\\resources",
+    "VidiEditor\\testsuites"
+]
+
+[tool.robocop]
+paths = [
+    "VidiEditor\\resources",
+    "VidiEditor\\testsuites"
+]
+reports = [
+    "all"
+]
+output = "results\\robocop-reports.txt"
+persistent = true
