@@ -4,7 +4,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.10"
 robotframework = "7.0"
-robotframework-browser = "18.3.0"
+robotframework-browser = "18.2.0"
 robotframework-jsonlibrary = "0.5"
 robotframework-pabot = "2.18.0"
 robotframework-pythonlibcore = "4.4.0"
@@ -14,7 +14,7 @@ timecode = "1.4.0"
 [tool.poetry.group.dev.dependencies]
 robotframework-robocop = "5.0.3"
 robotframework-tidy = "4.11.0"
-ruff = "0.3.5"
+ruff = "0.3.4"
 
 [build-system]
 requires = ["poetry-core"]
